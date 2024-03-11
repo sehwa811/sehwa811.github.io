@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="header-bar">
+  <h1>Sehwa Park</h1>
+  <h2>고민하지 말고 일단 하자!</h2>
+  <br/>
+  <hr>
+  <br/>
+</div>
+
+
+<ul class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2><a class="post-title" href="/_posts/2024-03-11-welcome-to-jekyll.markdown">Title</a></h2>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
+        <p>{{ post.description }}</p>
+        <br/>
+        <hr/>
+      </li>
+    {% endfor %}
+</ul>
